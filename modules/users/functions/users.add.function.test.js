@@ -2,7 +2,7 @@ const assert = require('assert');
 const { User } = require('mongoose').models;
 
 describe('User.add(...)', () => {
-  it('Creates an order successfully', async () => {
+  it('Creates a user successfully', async () => {
     const { code, message, userId } = await User.add({ user: { username: 'Hafez' } });
 
     assert.equal(code, 1);
